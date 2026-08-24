@@ -25,7 +25,16 @@ export const experience: ExperienceItem[] = [
     start: "Apr 2022",
     end: "Mar 2024",
     location: "Bengaluru, India · Remote",
-    tags: ["React.js", "Node.js", "Python", "AWS"],
+    summary:
+      "Led full-stack delivery across two products — the Monaire HVAC platform and Twarit, a logistics platform built from scratch — while mentoring the wider engineering team.",
+    highlights: [
+      "Built Twarit end to end: system design, JWT auth and permission management, REST APIs with unit tests, and CI/CD for both frontend and backend.",
+      "Led a team of three developers — task distribution, code review, and pair programming.",
+      "Overhauled the Monaire front end for performance and maintainability, and integrated third-party services including Zoho, Metabase, and Resideo sensors.",
+      "Shipped a React Native app for contractors to both iOS and Android.",
+      "Ran technical design and architecture reviews across the team.",
+    ],
+    tags: ["React.js", "React Native", "Node.js", "Python", "Django REST Framework", "AWS"],
   },
   {
     company: "Cyphertree Technologies",
@@ -34,7 +43,16 @@ export const experience: ExperienceItem[] = [
     start: "Oct 2020",
     end: "Apr 2022",
     location: "Pune, India · Remote",
-    tags: ["React.js", "Node.js", "PostgreSQL", "AWS"],
+    summary:
+      "Front-end engineer across three products — a healthcare platform and two SaaS products taken from empty repo to launch.",
+    highlights: [
+      "Built CT Forms from scratch: a reusable React form-builder UI library, Redux state management, and a dashboard app that consumed it.",
+      "Implemented multi-tenant auth with JWT — registration, password reset, refresh tokens, and role-based menu authorization.",
+      "Shipped The Onboarders as a multi-tenant app with subdomain routing, a multi-step form wizard, plan-based feature gating, and a drag-and-drop Kanban board.",
+      "Cut redundant API calls and resolved cross-browser compatibility issues.",
+      "Owned deployments, domain and environment setup, and the CD pipeline.",
+    ],
+    tags: ["React.js", "TypeScript", "Redux", "Ant Design", "PostgreSQL", "AWS"],
   },
   {
     company: "zCon Solutions",
@@ -43,6 +61,14 @@ export const experience: ExperienceItem[] = [
     start: "Mar 2019",
     end: "Oct 2020",
     location: "Pune, India · On-site",
-    tags: ["React.js", "Node.js", "PostgreSQL"],
+    summary:
+      "Backend-focused developer building RESTful services and third-party integrations, with front-end work in React.",
+    highlights: [
+      "Built REST APIs on Node.js and Express, with Sequelize and Mongoose ORMs for data handling.",
+      "Integrated Stripe for payments, DocuSign for e-signatures, and Twilio SendGrid for transactional email.",
+      "Wrote unit tests with Mocha and Chai, and scheduled background jobs with node-cron.",
+      "Implemented JWT auth, verified email registration, request validation, Winston logging, and Swagger API docs.",
+    ],
+    tags: ["Node.js", "Express", "React.js", "PostgreSQL", "MongoDB", "Mocha"],
   },
 ];
