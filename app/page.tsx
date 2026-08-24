@@ -1,3 +1,21 @@
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { Experience } from "@/components/Experience";
+import { Projects } from "@/components/Projects";
+import { Blog } from "@/components/Blog";
+import { Contact } from "@/components/Contact";
+
 export default function Home() {
-  return <main className="p-8 text-2xl font-semibold">Portfolio — coming together.</main>;
+  return (
+    <>
+      <Header />
+      <main id="top" className="mx-auto max-w-4xl px-6 pb-16">
+        <Hero />
+        <Experience />
+        <Projects />
+        <Blog />
+        <Contact />
+      </main>
+    </>
+  );
 }
