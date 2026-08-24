@@ -14,10 +14,11 @@ export const experience: ExperienceItem[] = [
     highlights: [
       "Owned the customer-facing web app (app.monaire.ai) end to end as its frontend developer from March 2024.",
       "Since January 2026, building backend services in Go alongside continued front-end work.",
+      "Contributed to the React Native app used by contractors alongside the main web app.",
       "Work with AWS across deployment and infrastructure.",
       "Build the product and data layer around Monaire's AI-driven HVAC and refrigeration monitoring.",
     ],
-    tags: ["React.js", "TypeScript", "Go", "AWS"],
+    tags: ["React.js", "React Native", "TypeScript", "Go", "AWS"],
   },
   {
     company: "Procedure",
