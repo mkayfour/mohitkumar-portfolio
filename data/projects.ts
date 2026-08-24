@@ -11,6 +11,7 @@ export const projects: Project[] = [
   },
   {
     name: "CT Forms",
+    icon: "/images/logos/ct-forms.png",
     description:
       "A form builder for small businesses and recruiters, automating hiring with ready-to-use job templates. Built the React form-building UI library, multi-tenant auth, and the dashboard from scratch.",
     tags: ["React.js", "TypeScript", "Redux", "Node.js"],
@@ -20,6 +21,7 @@ export const projects: Project[] = [
   },
   {
     name: "Twarit",
+    icon: "/images/logos/twarit.png",
     description:
       "Logistics management platform built from scratch, covering JWT auth and permissions, CI/CD for both ends, and system design against requirements. Led a team of three.",
     tags: ["React.js", "Django REST Framework", "PostgreSQL", "AWS"],
