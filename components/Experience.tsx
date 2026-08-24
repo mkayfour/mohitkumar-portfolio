@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { experience } from "@/data/experience";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Tag } from "@/components/ui/Tag";
@@ -14,7 +15,21 @@ export function Experience() {
             <Reveal delay={i * 60}>
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <h3 className="font-semibold">{job.company}</h3>
+                  <h3 className="font-semibold">
+                    {job.companyUrl ? (
+                      <a
+                        href={job.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                      >
+                        {job.company}
+                        <ArrowUpRight size={13} className="text-muted" aria-hidden />
+                      </a>
+                    ) : (
+                      job.company
+                    )}
+                  </h3>
                   {job.current && (
                     <span className="rounded border border-border bg-card px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-muted">
                       Present

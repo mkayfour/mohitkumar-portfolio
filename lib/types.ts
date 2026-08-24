@@ -23,6 +23,7 @@ export interface SkillGroup {
 
 export interface ExperienceItem {
   company: string;
+  companyUrl?: string;
   title: string;
   start: string; // e.g. "Mar 2024"
   end: string; // e.g. "Present"
@@ -47,6 +48,7 @@ export interface Project {
 
 export interface BlogPost {
   title: string;
+  excerpt: string;
   date: string; // ISO or display string
   tags: string[];
   url: string;

@@ -10,7 +10,7 @@ export function Blog() {
     <section className="pt-24">
       <SectionHeading
         id="blog"
-        title="Blog"
+        title="Blogs"
         action={
           <a
             href={mediumUrl}
@@ -36,7 +36,7 @@ export function Blog() {
           </a>
         </Reveal>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           {blog.map((post, i) => (
             <Reveal key={post.url} delay={i * 60}>
               <a
@@ -47,11 +47,15 @@ export function Blog() {
               >
                 <span className="text-xs text-muted">{post.date}</span>
                 <h3 className="mt-2 font-semibold leading-snug">{post.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{post.excerpt}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {post.tags.map((t) => (
                     <Tag key={t}>{t}</Tag>
                   ))}
                 </div>
+                <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-foreground">
+                  Read article <ArrowUpRight size={14} />
+                </span>
               </a>
             </Reveal>
           ))}

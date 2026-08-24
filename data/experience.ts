@@ -3,6 +3,7 @@ import type { ExperienceItem } from "@/lib/types";
 export const experience: ExperienceItem[] = [
   {
     company: "Monaire",
+    companyUrl: "https://www.monaire.ai/",
     title: "Senior Software Engineer",
     start: "Mar 2024",
     end: "Present",
@@ -19,26 +20,29 @@ export const experience: ExperienceItem[] = [
   },
   {
     company: "Procedure",
+    companyUrl: "https://procedure.tech/",
     title: "Principal Software Engineer",
     start: "Apr 2022",
     end: "Mar 2024",
     location: "Bengaluru, India · Remote",
-    tags: ["AWS", "React.js"],
+    tags: ["React.js", "Node.js", "Python", "AWS"],
   },
   {
     company: "Cyphertree Technologies",
+    companyUrl: "https://www.cyphertree.com/",
     title: "Software Engineer",
     start: "Oct 2020",
     end: "Apr 2022",
     location: "Pune, India · Remote",
-    tags: ["AWS", "PostgreSQL", "React.js"],
+    tags: ["React.js", "Node.js", "PostgreSQL", "AWS"],
   },
   {
     company: "zCon Solutions",
+    companyUrl: "https://www.zconsolutions.com/",
     title: "Software Developer",
     start: "Mar 2019",
     end: "Oct 2020",
     location: "Pune, India · On-site",
-    tags: ["PostgreSQL", "React.js"],
+    tags: ["React.js", "Node.js", "PostgreSQL"],
   },
 ];
