@@ -7,11 +7,14 @@ import { Socials } from "@/components/Socials";
 import { bioHighlights } from "@/data/skills";
 import { site } from "@/data/site";
 
+const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
 function renderBioWithHighlights(bio: string) {
-  const pattern = new RegExp(
-    `\\b(${bioHighlights.map((k) => k.replace(/\./g, "\\.")).join("|")})\\b`,
-    "g"
-  );
+  // Regex alternation is first-match-wins, so longer phrases have to be tried
+  // first or "React" would match inside "React Native" and leave "Native"
+  // unhighlighted. Sorting here means data/skills.ts can list keywords in any order.
+  const ordered = [...bioHighlights].sort((a, b) => b.length - a.length);
+  const pattern = new RegExp(`\\b(${ordered.map(escapeRegex).join("|")})\\b`, "g");
   return bio.split(pattern).map((part, i) =>
     bioHighlights.includes(part) ? (
       <strong key={i} className="font-semibold text-foreground">

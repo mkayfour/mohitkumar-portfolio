@@ -1,9 +1,9 @@
 import type { SkillGroup } from "@/lib/types";
 
 export const skillGroups: SkillGroup[] = [
-  { label: "Languages", items: ["HTML", "CSS", "JavaScript", "TypeScript", "Python"] },
+  { label: "Languages", items: ["HTML", "CSS", "JavaScript", "TypeScript", "Python", "Go"] },
   { label: "Frontend", items: ["React.js", "Redux", "Next.js"] },
-  { label: "Backend", items: ["Node.js", "Express", "Django REST Framework", "FastAPI"] },
+  { label: "Backend", items: ["Go", "Node.js", "Express", "Django REST Framework", "FastAPI"] },
   { label: "Databases", items: ["PostgreSQL", "MySQL", "MongoDB", "Sequelize ORM"] },
   { label: "Cloud & Tools", items: ["AWS"] },
   { label: "Testing", items: ["Mocha", "Chai", "React Testing Library"] },
@@ -14,9 +14,7 @@ export const topSkills: string[] = ["React.js", "Node.js", "FastAPI", "Redux.js"
 
 // Keywords bolded in the hero bio. Must match substrings present in profile.bio.
 export const bioHighlights: string[] = [
-  // Order matters: the hero builds a regex alternation from this list, so any
-  // phrase that starts with a shorter entry must come first ("React Native"
-  // before "React") or the shorter one wins the match.
+  // Order does not matter: the hero sorts these longest-first before matching.
   "Django REST Framework",
   "React Native",
   "TypeScript",
@@ -29,4 +27,5 @@ export const bioHighlights: string[] = [
   "Python",
   "React",
   "AWS",
+  "Go",
 ];

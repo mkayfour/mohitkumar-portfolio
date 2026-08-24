@@ -69,6 +69,7 @@ const personSchema = {
     "React",
     "Next.js",
     "Node.js",
+    "Go",
     "TypeScript",
     "Python",
     "FastAPI",
