@@ -3,12 +3,16 @@ import { profile } from "@/data/profile";
 import { PillButton } from "@/components/ui/PillButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { Socials } from "@/components/Socials";
+import { bioHighlights } from "@/data/skills";
+import { site } from "@/data/site";
 
 function renderBioWithHighlights(bio: string) {
-  const keywords = ["React", "Next.js", "Node.js", "Python", "FastAPI", "Django REST Framework"];
-  const pattern = new RegExp(`(${keywords.map((k) => k.replace(/\./g, "\\.")).join("|")})`, "g");
+  const pattern = new RegExp(
+    `\\b(${bioHighlights.map((k) => k.replace(/\./g, "\\.")).join("|")})\\b`,
+    "g"
+  );
   return bio.split(pattern).map((part, i) =>
-    keywords.includes(part) ? (
+    bioHighlights.includes(part) ? (
       <strong key={i} className="font-semibold text-foreground">
         {part}
       </strong>
@@ -23,9 +27,9 @@ export function Hero() {
     <section id="about" className="scroll-mt-24 pt-16 sm:pt-24">
       <Reveal>
         <h1 className="text-5xl font-bold leading-[1.05] tracking-tight sm:text-7xl">
-          <span className="text-muted">Full-Stack</span> Developer
+          <span className="text-muted">{site.headlineLead}</span> {site.headlineRest}
           <br />
-          building for the web.
+          {site.headlineSecondLine}
         </h1>
       </Reveal>
 

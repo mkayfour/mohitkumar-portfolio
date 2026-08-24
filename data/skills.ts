@@ -11,3 +11,13 @@ export const skillGroups: SkillGroup[] = [
 
 // Highlighted (bolded) in the hero intro.
 export const topSkills: string[] = ["React.js", "Node.js", "FastAPI", "Redux.js", "AWS"];
+
+// Keywords bolded in the hero bio. Must match substrings present in profile.bio.
+export const bioHighlights: string[] = [
+  "React",
+  "Next.js",
+  "Node.js",
+  "Python",
+  "Django REST Framework",
+  "FastAPI",
+];

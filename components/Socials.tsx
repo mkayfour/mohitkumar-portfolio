@@ -11,7 +11,8 @@ export function Socials({ size = 32 }: { size?: number }) {
           target="_blank"
           rel="noopener noreferrer"
           style={{ height: size, width: size }}
-          fgColor="#ffffff"
+          bgColor="var(--foreground)"
+          fgColor="var(--background)"
         />
       ))}
     </div>

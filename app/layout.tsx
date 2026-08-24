@@ -10,9 +10,17 @@ export const metadata: Metadata = {
   title: "Mohit Kumar Srivastava — Full-Stack Developer",
   description:
     "Full-Stack Developer with 7+ years building products end to end with React, Next.js, Node.js, and Python.",
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: "https://www.mkayfour.in/",
+    title: "Mohit Kumar Srivastava — Full-Stack Developer",
+    description:
+      "Full-Stack Developer with 7+ years building products end to end with React, Next.js, Node.js, and Python.",
+    images: ["/images/main.png"],
+  },
+  twitter: {
+    card: "summary",
     title: "Mohit Kumar Srivastava — Full-Stack Developer",
     description:
       "Full-Stack Developer with 7+ years building products end to end with React, Next.js, Node.js, and Python.",
@@ -26,6 +34,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans`}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.classList.add('js')`,
+          }}
+        />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

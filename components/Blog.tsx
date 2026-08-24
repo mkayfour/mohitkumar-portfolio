@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { blog, mediumUrl } from "@/data/blog";
+import { site } from "@/data/site";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Tag } from "@/components/ui/Tag";
 import { Reveal } from "@/components/ui/Reveal";
@@ -30,9 +31,7 @@ export function Blog() {
             rel="noopener noreferrer"
             className="flex items-center justify-between rounded-xl border border-border bg-card p-5 transition-colors hover:border-foreground/30"
           >
-            <span className="text-sm text-muted">
-              I write about JavaScript, React, and building products on Medium.
-            </span>
+            <span className="text-sm text-muted">{site.blogBlurb}</span>
             <ArrowUpRight size={16} />
           </a>
         </Reveal>
