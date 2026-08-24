@@ -26,10 +26,10 @@ export const experience: ExperienceItem[] = [
     end: "Mar 2024",
     location: "Bengaluru, India · Remote",
     summary:
-      "Led full-stack delivery across two products — the Monaire HVAC platform and Twarit, a logistics platform built from scratch — while mentoring the wider engineering team.",
+      "Led full-stack delivery across two products, the Monaire HVAC platform and Twarit (a logistics platform built from scratch), while mentoring the wider engineering team.",
     highlights: [
       "Built Twarit end to end: system design, JWT auth and permission management, REST APIs with unit tests, and CI/CD for both frontend and backend.",
-      "Led a team of three developers — task distribution, code review, and pair programming.",
+      "Led a team of three developers, covering task distribution, code review, and pair programming.",
       "Overhauled the Monaire front end for performance and maintainability, and integrated third-party services including Zoho, Metabase, and Resideo sensors.",
       "Shipped a React Native app for contractors to both iOS and Android.",
       "Ran technical design and architecture reviews across the team.",
@@ -44,10 +44,10 @@ export const experience: ExperienceItem[] = [
     end: "Apr 2022",
     location: "Pune, India · Remote",
     summary:
-      "Front-end engineer across three products — a healthcare platform and two SaaS products taken from empty repo to launch.",
+      "Front-end engineer across three products: a healthcare platform, plus two SaaS products taken from empty repo to launch.",
     highlights: [
       "Built CT Forms from scratch: a reusable React form-builder UI library, Redux state management, and a dashboard app that consumed it.",
-      "Implemented multi-tenant auth with JWT — registration, password reset, refresh tokens, and role-based menu authorization.",
+      "Implemented multi-tenant auth with JWT, covering registration, password reset, refresh tokens, and role-based menu authorization.",
       "Shipped The Onboarders as a multi-tenant app with subdomain routing, a multi-step form wizard, plan-based feature gating, and a drag-and-drop Kanban board.",
       "Cut redundant API calls and resolved cross-browser compatibility issues.",
       "Owned deployments, domain and environment setup, and the CD pipeline.",

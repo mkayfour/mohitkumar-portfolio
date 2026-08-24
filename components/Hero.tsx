@@ -67,10 +67,12 @@ export function Hero() {
           <PillButton href={`mailto:${profile.email}`} dot>
             Let&apos;s Talk With Me
           </PillButton>
-          <PillButton href={profile.resumeUrl} variant="outline" external>
-            <Download size={15} />
-            Download CV
-          </PillButton>
+          {profile.resumeUrl && (
+            <PillButton href={profile.resumeUrl} variant="outline" external>
+              <Download size={15} />
+              Download CV
+            </PillButton>
+          )}
           <PillButton href="#experience" variant="outline">
             Find Out More
           </PillButton>

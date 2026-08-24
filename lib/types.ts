@@ -13,7 +13,7 @@ export interface Profile {
   bio: string;
   email: string;
   avatar: string;
-  resumeUrl: string;
+  resumeUrl?: string;
   socials: SocialLink[];
 }
 
@@ -36,7 +36,7 @@ export interface ExperienceItem {
 }
 
 export interface ProjectLink {
-  label: "Website" | "Repository" | "Docs";
+  label: "Website" | "Repository" | "Docs" | "LinkedIn";
   url: string;
 }
 

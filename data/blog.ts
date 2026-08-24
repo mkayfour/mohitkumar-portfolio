@@ -7,7 +7,7 @@ export const blog: BlogPost[] = [
   {
     title: "Using AWS Textract with ReactJs",
     excerpt:
-      "Build a React app that pulls text out of images with AWS Textract — wiring up the AWS SDK, handling file uploads, and rendering the extracted OCR results.",
+      "Building a React app that pulls text out of images with AWS Textract: wiring up the AWS SDK, handling file uploads, and rendering the OCR results.",
     date: "Feb 2023",
     tags: ["React", "AWS", "OCR"],
     url: "https://mkayfour.medium.com/using-aws-textract-with-reactjs-6ca1e1bb478a",

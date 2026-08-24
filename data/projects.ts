@@ -5,25 +5,25 @@ export const projects: Project[] = [
     name: "Monaire",
     icon: "/images/logos/monaire.png",
     description:
-      "AI-powered HVAC and refrigeration management for commercial buildings — sensor data pipelines, admin tooling, and a React Native app for contractors.",
+      "AI-powered HVAC and refrigeration management for commercial buildings, spanning sensor data pipelines, admin tooling, and a React Native app for contractors.",
     tags: ["React.js", "React Native", "Python", "FastAPI", "PostgreSQL", "AWS"],
     links: [{ label: "Website", url: "https://www.monaire.ai/" }],
   },
   {
     name: "CT Forms",
     description:
-      "A Google Forms / Typeform-style SaaS form builder — built the React form-building UI library, multi-tenant auth, and the dashboard from scratch.",
+      "A form builder for small businesses and recruiters, automating hiring with ready-to-use job templates. Built the React form-building UI library, multi-tenant auth, and the dashboard from scratch.",
     tags: ["React.js", "TypeScript", "Redux", "Node.js"],
-    // Website link removed: app.forms.cyphertree.com no longer serves a valid
-    // TLS certificate. Restore the link if the app comes back online.
-    links: [],
+    // The app itself (app.forms.cyphertree.com) no longer serves a valid TLS
+    // certificate, so it links to the product page instead.
+    links: [{ label: "LinkedIn", url: "https://www.linkedin.com/showcase/ct-forms/" }],
   },
   {
     name: "Twarit",
     description:
-      "Logistics management platform built from scratch — JWT auth and permissions, CI/CD for both ends, and system design against requirements. Led a team of three.",
+      "Logistics management platform built from scratch, covering JWT auth and permissions, CI/CD for both ends, and system design against requirements. Led a team of three.",
     tags: ["React.js", "Django REST Framework", "PostgreSQL", "AWS"],
-    links: [],
+    links: [{ label: "Website", url: "https://twaritmobility.com/" }],
   },
   {
     name: "The Onboarders",
