@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { profile } from "@/data/profile";
 import "./globals.css";
+
+// Set NEXT_PUBLIC_GA_ID to your GA4 measurement ID (G-XXXXXXXXXX) to enable GA.
+const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -33,6 +39,43 @@ export const metadata: Metadata = {
     description,
     images: [ogImage],
   },
+  // Set GOOGLE_SITE_VERIFICATION to the token Search Console gives you.
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
+};
+
+// JSON-LD Person schema — helps Google show a rich result for name searches.
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profile.name,
+  url: "https://www.mkayfour.in/",
+  image: "https://www.mkayfour.in/images/mohit-kumar-srivastava.png",
+  jobTitle: "Senior Software Engineer",
+  email: `mailto:${profile.email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Pune",
+    addressRegion: "Maharashtra",
+    addressCountry: "IN",
+  },
+  worksFor: { "@type": "Organization", name: "Monaire", url: "https://www.monaire.ai/" },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "MIT Academy of Engineering",
+  },
+  knowsAbout: [
+    "React",
+    "Next.js",
+    "Node.js",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "AWS",
+  ],
+  sameAs: profile.socials.map((s) => s.url),
 };
 
 export default function RootLayout({
@@ -46,8 +89,14 @@ export default function RootLayout({
             __html: `document.documentElement.classList.add('js')`,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
+      {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
     </html>
   );
 }

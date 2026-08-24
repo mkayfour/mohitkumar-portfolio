@@ -13,6 +13,7 @@ export interface Profile {
   bio: string;
   email: string;
   avatar: string;
+  resumeUrl: string;
   socials: SocialLink[];
 }
 
@@ -52,4 +53,13 @@ export interface BlogPost {
   date: string; // ISO or display string
   tags: string[];
   url: string;
+}
+
+export interface EducationItem {
+  institution: string;
+  degree: string;
+  start: string;
+  end: string;
+  location: string;
+  activities?: string;
 }

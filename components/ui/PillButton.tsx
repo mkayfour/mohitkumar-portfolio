@@ -5,11 +5,13 @@ export function PillButton({
   children,
   variant = "solid",
   dot = false,
+  external = false,
 }: {
   href: string;
   children: React.ReactNode;
   variant?: "solid" | "outline";
   dot?: boolean;
+  external?: boolean;
 }) {
   const base =
     "inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
@@ -19,7 +21,11 @@ export function PillButton({
       : "border border-border text-foreground hover:bg-card";
 
   return (
-    <a href={href} className={cn(base, styles)}>
+    <a
+      href={href}
+      className={cn(base, styles)}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+    >
       {dot && <span className="h-2 w-2 rounded-full bg-accent" aria-hidden />}
       {children}
     </a>

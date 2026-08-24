@@ -1,4 +1,4 @@
-import { ExternalLink, Github, FileText, FolderGit2 } from "lucide-react";
+import { ExternalLink, GitBranch, FileText, FolderGit2 } from "lucide-react";
 import { projects } from "@/data/projects";
 import type { ProjectLink } from "@/lib/types";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -6,7 +6,7 @@ import { Tag } from "@/components/ui/Tag";
 import { Reveal } from "@/components/ui/Reveal";
 
 function LinkIcon({ label }: { label: ProjectLink["label"] }) {
-  if (label === "Repository") return <Github size={13} />;
+  if (label === "Repository") return <GitBranch size={13} />;
   if (label === "Docs") return <FileText size={13} />;
   return <ExternalLink size={13} />;
 }

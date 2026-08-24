@@ -3,6 +3,7 @@ import { site } from "@/data/site";
 import { PillButton } from "@/components/ui/PillButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { Socials } from "@/components/Socials";
+import { CurrentYear } from "@/components/ui/CurrentYear";
 
 export function Contact() {
   return (
@@ -23,7 +24,7 @@ export function Contact() {
       </Reveal>
 
       <footer className="mt-12 border-t border-border py-8 text-center text-sm text-muted">
-        © {new Date().getFullYear()} {profile.name}. {site.footerNote}
+        © <CurrentYear /> {profile.name}. {site.footerNote}
       </footer>
     </section>
   );

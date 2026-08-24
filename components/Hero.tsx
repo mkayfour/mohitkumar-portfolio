@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Download } from "lucide-react";
 import { profile } from "@/data/profile";
 import { PillButton } from "@/components/ui/PillButton";
 import { Reveal } from "@/components/ui/Reveal";
@@ -65,6 +66,10 @@ export function Hero() {
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <PillButton href={`mailto:${profile.email}`} dot>
             Let&apos;s Talk With Me
+          </PillButton>
+          <PillButton href={profile.resumeUrl} variant="outline" external>
+            <Download size={15} />
+            Download CV
           </PillButton>
           <PillButton href="#experience" variant="outline">
             Find Out More
