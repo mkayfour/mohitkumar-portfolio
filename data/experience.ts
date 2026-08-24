@@ -10,13 +10,14 @@ export const experience: ExperienceItem[] = [
     location: "Pune, India · Remote",
     current: true,
     summary:
-      "Building AI-powered commercial building automation with real-world climate impact. Work across the stack to ship reliable product features and robust server-side logic.",
+      "Building AI-powered commercial building automation for small businesses. Joined to own the web app as its frontend developer, and moved back to full-stack in January 2026 as the backend moved to Go.",
     highlights: [
-      "Develop full-stack features for the Monaire platform (app.monaire.ai).",
-      "Design and consume RESTful APIs and own data handling end to end.",
-      "Collaborate with product and design to ship intuitive, performant UI.",
+      "Owned the customer-facing web app (app.monaire.ai) end to end as its frontend developer from March 2024.",
+      "Since January 2026, building backend services in Go alongside continued front-end work.",
+      "Work with AWS across deployment and infrastructure.",
+      "Build the product and data layer around Monaire's AI-driven HVAC and refrigeration monitoring.",
     ],
-    tags: ["React.js", "Node.js", "Python", "FastAPI", "AWS"],
+    tags: ["React.js", "TypeScript", "Go", "AWS"],
   },
   {
     company: "Procedure",
@@ -26,7 +27,7 @@ export const experience: ExperienceItem[] = [
     end: "Mar 2024",
     location: "Bengaluru, India · Remote",
     summary:
-      "Led full-stack delivery across two products, the Monaire HVAC platform and Twarit (a logistics platform built from scratch), while mentoring the wider engineering team.",
+      "Led full-stack delivery across two products: Twarit, a logistics platform built from scratch, and Monaire, where I worked on-site as part of a client engagement building the HVAC platform in React and FastAPI.",
     highlights: [
       "Built Twarit end to end: system design, JWT auth and permission management, REST APIs with unit tests, and CI/CD for both frontend and backend.",
       "Led a team of three developers, covering task distribution, code review, and pair programming.",

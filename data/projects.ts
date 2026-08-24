@@ -6,7 +6,7 @@ export const projects: Project[] = [
     icon: "/images/logos/monaire.png",
     description:
       "AI-powered HVAC and refrigeration management for commercial buildings, spanning sensor data pipelines, admin tooling, and a React Native app for contractors.",
-    tags: ["React.js", "React Native", "Python", "FastAPI", "PostgreSQL", "AWS"],
+    tags: ["React.js", "TypeScript", "Go", "Python", "FastAPI", "AWS"],
     links: [{ label: "Website", url: "https://www.monaire.ai/" }],
   },
   {
