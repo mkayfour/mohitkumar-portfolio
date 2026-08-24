@@ -24,7 +24,7 @@ export function Projects() {
                 {project.icon ? (
                   <Image
                     src={project.icon}
-                    alt=""
+                    alt={`${project.name} logo`}
                     width={36}
                     height={36}
                     className="h-full w-full object-cover"

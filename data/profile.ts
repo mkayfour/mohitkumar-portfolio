@@ -5,7 +5,7 @@ export const profile: Profile = {
   role: "Senior Software Engineer @ Monaire",
   location: "Pune, Maharashtra, India",
   tagline: "Full-Stack Developer with 8+ years of experience.",
-  bio: "Full-Stack Developer with 8+ years shipping products end to end. I work across React, Next.js and React Native on the front end, and Go, Node.js and Python (FastAPI, Express, Django REST Framework) on the back end, with PostgreSQL, MongoDB and AWS underneath. At Monaire I lead feature delivery on AI-powered commercial building automation, building the product and data layer the models plug into. Along the way I've led small teams, run architecture reviews, and mentored the engineers around me.",
+  bio: "Full-Stack Developer with 8+ years shipping products end to end, mostly in TypeScript and Go. I work across React, Next.js and React Native on the front end, and Go, Node.js and Python (FastAPI, Express, Django REST Framework) on the back end, with PostgreSQL, MongoDB and AWS underneath. At Monaire I lead feature delivery on AI-powered commercial building automation, building the product and data layer the models plug into. Along the way I've led small teams, run architecture reviews, and mentored the engineers around me.",
   email: "mk4227525@gmail.com",
   avatar: "/images/mohit-kumar-srivastava.png",
   // Resume download disabled until the PDF is refreshed (the old one
