@@ -42,6 +42,7 @@ export interface ProjectLink {
 
 export interface Project {
   name: string;
+  icon?: string;
   description: string;
   tags: string[];
   links: ProjectLink[];

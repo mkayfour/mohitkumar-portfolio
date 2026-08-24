@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ExternalLink, GitBranch, FileText, FolderGit2 } from "lucide-react";
 import { projects } from "@/data/projects";
 import type { ProjectLink } from "@/lib/types";
@@ -19,8 +20,18 @@ export function Projects() {
         {projects.map((project, i) => (
           <Reveal key={project.name} delay={i * 60}>
             <article className="h-full rounded-xl border border-border bg-card p-5 transition-colors hover:border-foreground/30">
-              <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-background">
-                <FolderGit2 size={18} />
+              <div className="mb-3 flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg border border-border bg-background">
+                {project.icon ? (
+                  <Image
+                    src={project.icon}
+                    alt=""
+                    width={36}
+                    height={36}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <FolderGit2 size={18} />
+                )}
               </div>
               <h3 className="font-semibold">{project.name}</h3>
               <p className="mt-1 text-sm leading-relaxed text-muted">{project.description}</p>
