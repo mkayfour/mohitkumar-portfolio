@@ -29,9 +29,10 @@ export const projects: Project[] = [
   },
   {
     name: "The Onboarders",
+    icon: "/images/logos/cyphertree.png",
     description:
       "Multi-tenant employee onboarding SaaS with subdomain routing, a multi-step form wizard, plan-based feature gating, and a drag-and-drop Kanban board.",
     tags: ["React.js", "Redux", "Ant Design"],
-    links: [],
+    links: [{ label: "Website", url: "https://cyphertree.com/" }],
   },
 ];

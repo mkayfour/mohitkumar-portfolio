@@ -14,10 +14,19 @@ export const topSkills: string[] = ["React.js", "Node.js", "FastAPI", "Redux.js"
 
 // Keywords bolded in the hero bio. Must match substrings present in profile.bio.
 export const bioHighlights: string[] = [
-  "React",
+  // Order matters: the hero builds a regex alternation from this list, so any
+  // phrase that starts with a shorter entry must come first ("React Native"
+  // before "React") or the shorter one wins the match.
+  "Django REST Framework",
+  "React Native",
+  "TypeScript",
   "Next.js",
   "Node.js",
-  "Python",
-  "Django REST Framework",
+  "PostgreSQL",
+  "MongoDB",
   "FastAPI",
+  "Express",
+  "Python",
+  "React",
+  "AWS",
 ];
